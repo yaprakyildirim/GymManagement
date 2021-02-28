@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:17:p, comp scrollPane1:::p::p, par l {seq {space s:::p, par l {comp label2:::p::p, seq l {par t:::p {comp label3::l:::x, comp label1::l:::x}, space s:::p, par l:::p {comp cmbTrainer::::143:x, comp txDuration::::143:x}}, seq t {comp label4:::p::p, space u:::p, comp txName:::p:145:p}}}, seq l {space :p:36:p, par t:::p {seq {comp btnSave:::p::p, space :::x, comp btnDelete:::p::p}, comp scrollPane2:::p:173:p}}}, space ::17:x}, seq t {space ::546:x, comp btnClear:::p::p, space :p:110:p}}"
+			"$verticalGroup": "par l {seq {space :p:19:p, par l {seq {par b {comp label4::b:p::p, comp txName::b:p::p}, space :::p, par b {comp label1::b:p::p, comp cmbTrainer::b:p::p}, space :p:19:p, par b {comp label3::b:p::p, comp txDuration::b:p::p}, space s:::p, comp label2:::p::p, space s:::p, comp scrollPane2:::p::p, space :::p, par b {comp btnDelete::b:p::p, comp btnSave::b:p::p}}, comp scrollPane1:::p:283:p}, space :p:20:p, comp btnClear:::p::p, space :::x}}"
+		} ) {
+			name: "panel1"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "scrollPane1MouseClicked", true ) )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tblExercise"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tblExerciseMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Trainer"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Equipments"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Duration"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbTrainer"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "equipmentList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txDuration"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSave"
+				"text": "Save"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSaveActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnDeleteMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnClear"
+				"text": "Clear"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnClearMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Ex. Name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txName"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 725, 370 )
+		} )
+	}
+}

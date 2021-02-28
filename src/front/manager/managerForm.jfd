@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:18:p, par l:::p {comp btnEquipment:::::x, comp btnTrainerOp:::::x}, space ::48:x, par l:::p {comp button1::::208:x, comp btnHall::::208:x}, space :p:38:p}}"
+				"$verticalGroup": "par l {seq l {space :p:21:p, par b {comp btnTrainerOp::b:p:46:p, comp button1::b:p:46:p}, space ::34:x, par b {comp btnEquipment::b:p:45:p, comp btnHall::b:p:45:p}, space ::154:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 153, 153, 153, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnTrainerOp"
+					"text": "Trainer operations"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnTrainerOpActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Customer operations"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnEquipment"
+					"text": "Equipment Operations"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnEquipmentActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnHall"
+					"text": "Hall operations"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnHallActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 500, 300 )
+		} )
+	}
+}

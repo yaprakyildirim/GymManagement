@@ -1,0 +1,26 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:29:p, comp btnSubs:::p:230:p, space ::73:x, comp btnExercise:::p:218:p, space :p:30:p}}"
+			"$verticalGroup": "par l {seq l {space :p:30:p, par b {comp btnSubs::b:p:58:p, comp btnExercise::b:p:58:p}, space ::262:x}}"
+		} ) {
+			name: "panel1"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSubs"
+				"text": "Subscription operations"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSubsActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnExercise"
+				"text": "Exercise plan operations"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnExerciseActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 580, 350 )
+		} )
+	}
+}

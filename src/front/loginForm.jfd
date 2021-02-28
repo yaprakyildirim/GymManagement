@@ -1,0 +1,48 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, par t {comp btnLogin::t:p:221:p, seq {par l {comp label1::l:p:93:p, comp label2::l:p:76:p, comp label3::l:p:84:p}, space :::p, par l:::p {comp cmbUserType::::137:x, comp txUsername::::137:x, comp txPassword::::137:x}}}, space ::43:x}}"
+				"$verticalGroup": "par l {seq l {space :p:59:p, par b {comp label1::b:p::p, comp txUsername::b:p::p}, space u:::p, par b {comp label2::b:p::p, comp txPassword::b:p::p}, space u:::p, par t {comp cmbUserType:::p::p, comp label3:::p::p}, space s:::p, comp btnLogin:::p::p, space ::72:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 153, 153, 153, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Password"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txUsername"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txPassword"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbUserType"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "User type"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnLogin"
+					"text": "Login"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLoginActionPerformed", true ) )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 285, 260 )
+		} )
+	}
+}

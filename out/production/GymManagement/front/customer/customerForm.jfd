@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:21:p, comp scrollPane1:::p:543:p, space s:::p, par l {seq {space :0:50:x, comp label1:::p::p, space :p:59:p}, seq t {par t {comp btnDelete::l::181:x, seq l {par l {comp label4::l:p::p, comp label3::l:p::p, comp label2::l:p::p}, space s:::p, par l {comp txPhone::::84:x, comp txPassword::::84:x, comp lbFullName::l::84:x}}, comp btnSave::l::181:x}, space :p:32:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:17:p, par l {comp scrollPane1:::p:245:p, seq {comp label1:::p::p, space :p:10:p, par b {comp label2::b:p::p, comp lbFullName::b:p::p}, space u:::p, par b {comp label3::b:p::p, comp txPassword::b:p::p}, space u:::p, par b {comp label4::b:p::p, comp txPhone::b:p::p}, space s:::p, comp btnSave:::p::p, space :::p, comp btnDelete:::p::p}}, space ::43:x}}"
+		} ) {
+			name: "panel1"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tblLessons"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tblLessonsMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Delete my exercise"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "My information"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Full name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Phone Num"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txPhone"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txPassword"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSave"
+				"text": "Save"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSaveActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbFullName"
+				"text": "text"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 795, 305 )
+		} )
+	}
+}

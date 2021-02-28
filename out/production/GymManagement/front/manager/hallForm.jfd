@@ -1,0 +1,69 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:551:p, par l {seq {par l {seq {space :p:94:p, comp label1:::p::p}, seq l {space :p:59:p, comp scrollPane2:::p:180:p}}, space ::79:x}, seq l {space :p:30:p, comp btnSave:::p:86:p, space s:::p, comp btnDelete:::p::p, space s:::p, comp btnClear:::p::p, space ::19:x}, seq {space ::45:x, par l {comp label2:::p::p, comp label4:::p::p, comp label3:::p::p}, space s:::p, par l:::p {comp txHallName::::118:x, comp txOpenAt::::118:x, comp txClosedAt::::118:x}, space ::57:x}}}}"
+			"$verticalGroup": "par l {seq {par l {seq {space :::p, comp scrollPane1:::p:328:p}, seq l {space :p:25:p, par b {comp txHallName::b:p::p, comp label4::b:p::p}, space :::p, par b {comp txOpenAt::b:p::p, comp label2::b:p::p}, space s:::p, par b {comp txClosedAt::b:p::p, comp label3::b:p::p}, space s:::p, comp label1:::p::p, space :::p, comp scrollPane2:::p:103:p, space :p:35:p, par b {comp btnSave::b:p::p, comp btnDelete::b:p::p, comp btnClear::b:p::p}}}, space ::16:x}}"
+		} ) {
+			name: "panel1"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tblHall"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tblHallMouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "equipmentList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txClosedAt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txOpenAt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Equipment List"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Opened at :"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Closed at:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSave"
+				"text": "Save"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSaveActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnClear"
+				"text": "Clear"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnClearActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txHallName"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Hall name"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 875, 350 )
+		} )
+	}
+}

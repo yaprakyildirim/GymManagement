@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GymManagement:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GymManagement_jar</output-path>
+    <root id="archive" name="GymManagement.jar">
+      <element id="module-output" name="GymManagement" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/miglayout-core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/beansbinding.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

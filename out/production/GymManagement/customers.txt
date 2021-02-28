@@ -1,0 +1,2 @@
+1	tarik	filiz	545 747 3009	12345	true	test adress	tarikfiliz@yahoo.com	100	PAID_CASH
+2	Emre	Kahraman	123 456 12 34	12345	true	test adress	ek@gmail.com	250	PAID_CREDIT_CARD

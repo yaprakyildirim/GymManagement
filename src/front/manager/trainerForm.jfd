@@ -1,0 +1,78 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:928:p, par l {seq {space :p:18:p, par l {seq t {comp label2:::p::p, space ::23:x, comp txSurname:::p:90:p}, seq t {comp label1:::p::p, space ::46:x, comp txName:::p:90:p}, seq t {comp label3:::p::p, space ::42:x, comp txPhone:::p:90:p}, seq t {comp label4:::p::p, space ::20:x, comp txPassword:::p:90:p}, seq t {comp label5:::p::p, space ::42:x, par l:::p {comp cmbStatus::::90:x, comp txHallId::::90:x, comp txSalary::::90:x}}}, space :p:28:p}, seq {space s:::p, par l {seq {comp btnUpdate:::p::p, space :::p, comp btnDelete:::p::p}, comp label6::l:p::p}, space ::35:x}}}}"
+			"$verticalGroup": "par l {comp scrollPane1::t::345:x, seq l {space :p:44:p, par l {comp txName:::p::p, comp label1:::p::p}, space u:::p, par b {comp txSurname::b:p::p, comp label2::b:p::p}, space :::p, par b {comp txPhone::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp txPassword::b:p::p, comp label4::b:p::p}, space u:::p, par b {comp txSalary::b:p::p, comp label5::b:p::p}, space u:::p, par b {comp label6::b:p::p, comp txHallId::b:p::p}, space s:::p, comp cmbStatus:::p::p, space ::21:x, par b {comp btnUpdate::b:p::p, comp btnDelete::b:p::p}, space :p:39:p}}"
+		} ) {
+			name: "panel1"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tblTrainer"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tblTrainerMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txName"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txSurname"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txPhone"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txPassword"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txSalary"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Surname"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Phone"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Salary"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnUpdate"
+				"text": "Update"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnUpdateActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Hall id"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txHallId"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbStatus"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 35, 0 )
+			"size": new java.awt.Dimension( 1155, 345 )
+		} )
+	}
+}

@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:839:p, space s:::p, par l {seq {par l {comp label1:::p::p, comp label2:::p::p, comp label3::l:p::p, comp label4:::p::p, comp label5:::p::p, comp label6:::p::p}, space ::8:x, par l:::p {comp txName:::::x, comp txSurname:::::x, comp txPhone::l:::x, comp txPassword:::::x, comp txMail:::::x, comp scrollPane2:::p:159:p, comp cmbStatus:::p::p, seq {comp cmbPaidMethod:::p::p, space s:::p, comp txAmount:::::x}}}, seq l {comp btnSave:::p:100:p, space :p:31:p, comp btnDelete::::101:x}}, space :p:20:p}}"
+			"$verticalGroup": "par l {seq {par l {seq {space :::p, comp scrollPane1:::p::p}, seq l {space :p:26:p, par b {comp txName::b:p::p, comp label1::b:p::p}, space u:::p, par b {comp txSurname::b:p::p, comp label2::b:p::p}, space u:::p, par b {comp txPhone::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp txPassword::b:p::p, comp label4::b:p::p}, space s:::p, par b {comp txMail::b:p::p, comp label5::b:p::p}, space s:::p, par l {comp scrollPane2:::p:83:p, comp label6:::p::p}, space s:::p, comp cmbStatus:::p::p, space u:::p, par b {comp cmbPaidMethod::b:p::p, comp txAmount::b:p::p}, space s:::p, par b {comp btnSave::b:p::p, comp btnDelete::b:p::p}}}, space ::13:x}}"
+		} ) {
+			name: "panel1"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tblCust"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tblCustMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txName"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txSurname"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txPhone"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txPassword"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txMail"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "txAdress"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbStatus"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmbPaidMethod"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txAmount"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Surname"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Phone"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Email"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Adress"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSave"
+				"text": "Save"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSaveActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1115, 440 )
+		} )
+	}
+}

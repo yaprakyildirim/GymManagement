@@ -1,0 +1,6 @@
+1	Dumbell
+2	Z Bar
+3	Bicycle
+4	Curl bench
+5	Leg machine
+6	Cable row
